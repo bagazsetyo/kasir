@@ -7,54 +7,62 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+#   About Kasir
+A Cashier Web App Made With Laravel, And Livewire:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Features**
+-   Roles
+    -   Super Admin, Administrator, Kasir, Gudang
+- Basic Features
+    - Authentication, Create Product, Edit Product, Set Gudang Stock, Create Order, Edit Order, Add & Edit Product On Every Order And Menu Stock Automatically Changed, Cancel Order, Checkouts, Manage Gudang Stock, And Manage Dasgboard admin.
+-   user manage 
+    -   Create Cashier, Manage Cashier Profile, Create Admin, Manage Profile.
+-    Super Admin Manage
+        - Auth, Create Team, Update Name Team, Change Team, Change Role Team, Change Profile, Delete Team, Delete User Team. 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**What's in it?**
+- Laravel 8.x
+- Livewire 2.x
+- Tailwind 2
+- Font Awesome
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
+**Learning Laravel**
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+**Requirement**
+-   mysql >= 7.3
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+#   Installation
 
-### Premium Partners
+Create a Database Table in phpMyAdmin
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+Extract the Kasir Source Code that has been downloaded to a folder anywhere.
 
-## Contributing
+Open Code Editor → Terminal.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+In Terminal, navigate to the extracted Oashier folder.
+  ```$ cd kasir```
+  
+Enter these commands one by one ,
+  ```
+  $ composer install
+  $ npm install
+  $ cp .env.example .env
+  $ php artisan key:generate
+  $ php artisan storage:link
+  ```
+Edit the .env file like this,
+  ```
+  DB_CONNECTION = mysql
+  DB_HOST = 127.0.0.1 // change to Host your database
+  DB_PORT = 3306
+  DB_DATABASE = kasir // change to the name of the database table that you created
+  DB_USERNAME = root // change to be your database username, default root
+  DB_PASSWORD = ... // change to your databse password, null default 
+  ```
 
 ## License
 
