@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+![Picture](https://github.com/bagazsetyo/kasir/blob/master/public/img/1.PNG)
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -39,8 +39,6 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 Create a Database Table in phpMyAdmin
 
-Extract the Kasir Source Code that has been downloaded to a folder anywhere.
-
 Open Code Editor → Terminal.
 
 In Terminal, navigate to the extracted Oashier folder.
@@ -52,7 +50,6 @@ Enter these commands one by one ,
   $ npm install
   $ cp .env.example .env
   $ php artisan key:generate
-  $ php artisan storage:link
   ```
 Edit the .env file like this,
   ```
